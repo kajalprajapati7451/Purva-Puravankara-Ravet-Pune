@@ -131,43 +131,47 @@ h6 {
 
 /* Buttons */
 .btn-primary-gold {
-    background-color: var(--btn-black);
+    background: linear-gradient(135deg, var(--btn-black) 0%, #333333 100%);
     color: var(--bg-white);
-    padding: 12px 30px;
+    padding: 14px 32px;
     font-weight: 600;
     font-size: 16px;
-    border: 2px solid var(--btn-black);
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .btn-primary-gold:hover {
-    background-color: var(--primary-accent);
-    border-color: var(--primary-accent);
-    color: var(--btn-black);
+    background: var(--primary-accent);
+    color: var(--primary-dark) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(184, 255, 59, 0.5);
 }
 
 .btn-outline-gold {
     background-color: transparent;
-    color: var(--btn-black);
-    padding: 12px 30px;
+    color: var(--bg-white) !important;
+    padding: 14px 32px;
     font-weight: 600;
     font-size: 16px;
-    border: 2px solid var(--btn-black);
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    border: 2px solid var(--primary-accent);
+    border-radius: 30px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .btn-outline-gold:hover {
-    background-color: var(--btn-black);
-    color: var(--bg-white);
+    background-color: var(--primary-accent);
+    color: var(--primary-dark) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(184, 255, 59, 0.4);
 }
 
 /* Form Card */
 .form-card {
     background-color: var(--bg-white);
     padding: 40px 30px;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: var(--shadow-soft);
     max-width: 400px;
     border: 1px solid var(--card-border);
@@ -211,18 +215,18 @@ h6 {
 }
 
 .divider {
-    width: 60px;
+    width: 80px;
     height: 4px;
-    background-color: var(--primary-accent);
+    background: linear-gradient(90deg, transparent, var(--primary-accent), transparent);
     border-radius: 2px;
 }
 
 .info-card {
     background-color: var(--bg-white);
-    border: 1px solid var(--card-border) !important;
-    border-radius: 12px !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(30, 30, 46, 0.08) !important;
+    border-radius: 16px !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
 }
 
 .info-card h4.gold-text {
@@ -235,15 +239,15 @@ h6 {
 }
 
 .info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-soft);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(30, 30, 46, 0.1), 0 5px 15px rgba(184, 255, 59, 0.1);
     border-color: var(--primary-accent) !important;
 }
 
 .info-card.active-launch {
     border: 2px solid var(--primary-accent) !important;
     background-color: var(--bg-white);
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 10px 30px rgba(184, 255, 59, 0.2);
 }
 
 /* FAQ Section */
@@ -252,11 +256,17 @@ h6 {
 }
 
 .accordion-item {
-    border: 1px solid var(--card-border) !important;
-    border-radius: 8px !important;
+    border: 1px solid rgba(30, 30, 46, 0.08) !important;
+    border-radius: 12px !important;
     overflow: hidden;
-    margin-bottom: 1rem !important;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02) !important;
+    margin-bottom: 1.25rem !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01) !important;
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    border-color: rgba(184, 255, 59, 0.4) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03) !important;
 }
 
 .accordion-button {
@@ -264,23 +274,24 @@ h6 {
     color: var(--primary-dark);
     background-color: var(--bg-secondary);
     padding: 1.25rem;
+    transition: all 0.3s ease;
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--btn-black);
-    background-color: var(--primary-accent);
+    color: var(--primary-accent) !important;
+    background-color: var(--primary-dark) !important;
     box-shadow: none;
 }
 
 .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0, 0, 0, .125);
 }
 
 .accordion-body {
     background-color: var(--bg-white);
     color: var(--text-secondary);
     padding: 1.25rem;
+    line-height: 1.7;
 }
 
 /* Footer */
@@ -302,13 +313,13 @@ footer.footer p {
     width: 100%;
     z-index: 1000;
     background: var(--bg-white);
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .cta-btn {
     flex: 1;
     text-align: center;
-    padding: 15px 0;
+    padding: 16px 0;
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
@@ -333,6 +344,287 @@ footer.footer p {
     opacity: 0.9;
 }
 
+/* Custom Utility classes for expanded sections */
+.bg-secondary-custom {
+    background-color: var(--bg-secondary);
+}
+
+.text-secondary-custom {
+    color: var(--text-secondary);
+}
+
+.text-light-muted {
+    color: #A0AABF;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+/* About Section & Legacy Card */
+.about-section .lead-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-dark);
+}
+
+.legacy-card {
+    background-color: var(--primary-dark);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-top: 5px solid var(--primary-accent) !important;
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+.legacy-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(184, 255, 59, 0.08) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+}
+
+.legacy-icon {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(184, 255, 59, 0.1);
+    width: fit-content;
+}
+
+/* Advantage Cards & Hover animations */
+.advantage-card {
+    border: 1px solid rgba(30, 30, 46, 0.08);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 16px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    background-color: var(--bg-white);
+}
+
+.advantage-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(30, 30, 46, 0.1), 0 5px 15px rgba(184, 255, 59, 0.12);
+    border-color: var(--primary-accent) !important;
+}
+
+.advantage-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--primary-dark);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.advantage-card:hover .advantage-icon {
+    background-color: var(--primary-accent);
+}
+
+.advantage-card:hover .advantage-icon i {
+    color: var(--primary-dark) !important;
+    text-shadow: none;
+}
+
+/* Residences Specification highlights */
+.spec-highlight-card {
+    background-color: var(--bg-white);
+    border: 1px solid rgba(30, 30, 46, 0.08);
+    border-radius: 12px !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.spec-highlight-card:hover {
+    border-color: var(--primary-accent);
+    box-shadow: 0 10px 25px rgba(184, 255, 59, 0.08);
+}
+
+.flat-options-card {
+    border-top: 5px solid var(--primary-dark) !important;
+    border-radius: 16px !important;
+    box-shadow: var(--shadow-soft);
+}
+
+.config-box {
+    background-color: var(--bg-secondary);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.config-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(184, 255, 59, 0.2);
+    border-color: var(--primary-accent) !important;
+    background-color: var(--primary-dark) !important;
+}
+
+.config-box:hover h4 {
+    color: var(--primary-accent) !important;
+}
+
+.config-box:hover p {
+    color: #A0AABF !important;
+}
+
+/* Amenities Card Grid & Animations */
+.amenity-card {
+    border: 1px solid rgba(30, 30, 46, 0.08);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    border-radius: 14px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.amenity-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(30, 30, 46, 0.15), 0 0 20px rgba(184, 255, 59, 0.2);
+    border-color: var(--primary-accent) !important;
+    background-color: var(--primary-dark) !important;
+}
+
+.amenity-card:hover h6 {
+    color: var(--bg-white);
+}
+
+.amenity-icon {
+    transition: transform 0.3s ease;
+}
+
+.amenity-card:hover .amenity-icon {
+    transform: scale(1.18);
+}
+
+.community-banner {
+    border-left: 5px solid var(--primary-accent) !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Location Custom tab Pill Navs */
+.custom-location-tabs .nav-link {
+    background-color: var(--bg-white);
+    color: var(--primary-dark);
+    border: 1px solid rgba(30, 30, 46, 0.1);
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.custom-location-tabs .nav-link:hover {
+    background-color: var(--bg-secondary);
+    color: var(--primary-dark);
+}
+
+.custom-location-tabs .nav-link.active {
+    background-color: var(--primary-dark) !important;
+    color: var(--primary-accent) !important;
+    border-color: var(--primary-dark);
+    box-shadow: 0 8px 20px rgba(30, 30, 46, 0.2);
+}
+
+#locationTabContent {
+    border-radius: 16px !important;
+}
+
+/* CTA Banner Section styling */
+.cta-banner-section {
+    background: linear-gradient(rgba(30, 30, 46, 0.9), rgba(30, 30, 46, 0.95)), url('images/images.jpg') center/cover no-repeat !important;
+}
+
+.bg-navy-custom {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Semi-transparent dark backgrounds */
+.bg-dark-semi {
+    background-color: rgba(30, 30, 46, 0.7) !important;
+    backdrop-filter: blur(8px);
+}
+
+/* Glassmorphism Contact Form Section */
+.contact-form-section {
+    background: linear-gradient(rgba(30, 30, 46, 0.95), rgba(30, 30, 46, 0.98)), url('images/images.jpg') center/cover no-repeat !important;
+}
+
+.glass-form-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-top: 5px solid var(--primary-accent) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+.glass-form-card .form-control,
+.glass-form-card .form-select {
+    background-color: rgba(30, 30, 46, 0.5) !important;
+    color: var(--bg-white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.glass-form-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.glass-form-card .form-control:focus,
+.glass-form-card .form-select:focus {
+    border-color: var(--primary-accent) !important;
+    box-shadow: 0 0 10px rgba(184, 255, 59, 0.4) !important;
+    background-color: rgba(30, 30, 46, 0.7) !important;
+}
+
+.glass-form-card .input-group-text {
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Map wrapper styling */
+.map-wrapper {
+    box-shadow: var(--shadow-soft);
+    border-color: var(--card-border) !important;
+    transition: all 0.3s ease;
+}
+
+.map-wrapper:hover {
+    border-color: var(--primary-accent) !important;
+    box-shadow: 0 10px 30px rgba(184, 255, 59, 0.15);
+}
+
+/* Slider (Carousel) Indicators & Controls */
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary-accent);
+}
+
+.carousel-caption {
+    background-color: rgba(30, 30, 46, 0.75) !important;
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.carousel-caption h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-section .project-title {
+    font-size: clamp(36px, 6vw, 64px) !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(184, 255, 59, 0.25);
+}
+
 @media (max-width: 991px) {
     .hero-section {
         padding: 60px 0 100px 0;
@@ -347,7 +639,196 @@ footer.footer p {
         display: inline-block;
     }
 
+    .custom-location-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .custom-location-tabs .nav-item {
+        width: 100%;
+    }
+
+    .custom-location-tabs .nav-link {
+        text-align: center;
+        border-radius: 8px;
+    }
+
     footer {
         padding-bottom: 70px !important;
     }
+}
+
+/* Amenities Multi-Item Carousel */
+.amenity-card-new {
+    background-color: var(--bg-white);
+    border: none !important;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.amenity-card-new:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(30, 30, 46, 0.15);
+}
+
+.amenity-img-wrapper {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.amenity-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.amenity-card-new:hover .amenity-img-wrapper img {
+    transform: scale(1.08);
+}
+
+.amenity-banner-bottom {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.amenity-banner-bottom h5 {
+    color: var(--bg-white);
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+}
+
+.amenity-banner-pink {
+    background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+}
+
+.amenity-banner-purple {
+    background: linear-gradient(135deg, #673AB7 0%, #512DA8 100%);
+}
+
+.amenity-banner-blue {
+    background: linear-gradient(135deg, #00BCD4 0%, #0097A7 100%);
+}
+
+/* Control Buttons Override */
+.amenities-carousel-wrap {
+    position: relative;
+    padding: 0 20px;
+}
+
+.amenities-carousel-wrap .carousel-control-prev,
+.amenities-carousel-wrap .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-white) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 50% !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    opacity: 1 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+    z-index: 10;
+}
+
+.amenities-carousel-wrap .carousel-control-prev:hover,
+.amenities-carousel-wrap .carousel-control-next:hover {
+    background-color: var(--primary-accent) !important;
+    border-color: var(--primary-accent) !important;
+    box-shadow: 0 8px 20px rgba(184, 255, 59, 0.4) !important;
+}
+
+.amenities-carousel-wrap .carousel-control-prev-icon,
+.amenities-carousel-wrap .carousel-control-next-icon {
+    filter: invert(1) !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.amenities-carousel-wrap .carousel-control-prev {
+    left: -25px !important;
+}
+
+.amenities-carousel-wrap .carousel-control-next {
+    right: -25px !important;
+}
+
+/* Native Horizontal Swipe Strip on Mobile Views */
+@media (max-width: 767px) {
+    .amenities-carousel-wrap .carousel-inner {
+        display: flex !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory !important;
+        gap: 15px !important;
+        padding: 10px 5px 25px 5px !important;
+    }
+    
+    .amenities-carousel-wrap .carousel-item {
+        margin-right: 0 !important;
+        flex: 0 0 82% !important;
+        scroll-snap-align: start !important;
+        display: block !important;
+    }
+    
+    .amenities-carousel-wrap .row {
+        flex-wrap: nowrap !important;
+        margin: 0 !important;
+    }
+    
+    .amenities-carousel-wrap .col-12 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    .amenities-carousel-wrap .carousel-control-prev,
+    .amenities-carousel-wrap .carousel-control-next {
+        display: none !important;
+    }
+}
+
+/* Overview Advantage Cards */
+.advantage-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(30, 30, 46, 0.08) !important;
+    border-radius: 16px;
+    background-color: var(--bg-white);
+}
+
+.advantage-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-accent) !important;
+    box-shadow: 0 15px 35px rgba(184, 255, 59, 0.15) !important;
+}
+
+.advantage-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    transition: all 0.3s ease;
+}
+
+.advantage-card:hover .advantage-icon {
+    background-color: var(--primary-accent);
+}
+
+.advantage-card:hover .advantage-icon i {
+    color: var(--bg-secondary) !important;
 }
