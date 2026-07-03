@@ -765,37 +765,32 @@ footer.footer p {
     right: -25px !important;
 }
 
-/* Native Horizontal Swipe Strip on Mobile Views */
+/* Adjust control arrows position on Mobile views */
 @media (max-width: 767px) {
-    .amenities-carousel-wrap .carousel-inner {
-        display: flex !important;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory !important;
-        gap: 15px !important;
-        padding: 10px 5px 25px 5px !important;
+    .amenities-carousel-wrap .carousel-control-prev {
+        left: 5px !important;
     }
     
-    .amenities-carousel-wrap .carousel-item {
-        margin-right: 0 !important;
-        flex: 0 0 82% !important;
-        scroll-snap-align: start !important;
-        display: block !important;
-    }
-    
-    .amenities-carousel-wrap .row {
-        flex-wrap: nowrap !important;
-        margin: 0 !important;
-    }
-    
-    .amenities-carousel-wrap .col-12 {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-    }
-    
-    .amenities-carousel-wrap .carousel-control-prev,
     .amenities-carousel-wrap .carousel-control-next {
-        display: none !important;
+        right: 5px !important;
+    }
+    
+    /* Make Location Navigation tabs full-width and centered on mobile */
+    .custom-location-tabs {
+        width: 100% !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+    
+    .custom-location-tabs .nav-item {
+        width: 100% !important;
+    }
+    
+    .custom-location-tabs .nav-link {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 12px !important;
+        border-radius: 12px !important;
     }
 }
 
@@ -910,5 +905,21 @@ footer.footer p {
     
     .advantage-card {
         margin-bottom: 15px;
+    }
+}
+
+/* Global mobile padding and width normalization */
+html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+}
+
+@media (max-width: 576px) {
+    .p-5 {
+        padding: 1.5rem !important;
+    }
+    
+    .p-4 {
+        padding: 1.25rem !important;
     }
 }

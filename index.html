@@ -459,14 +459,14 @@
                     <div class="flat-options-card p-5 border rounded bg-white text-center shadow-sm">
                         <h3 class="mb-4">Expected Configurations</h3>
                         <div class="row g-3 mb-4">
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="config-box p-3 border rounded">
                                     <h4 class="gold-text mb-1">2 BHK</h4>
                                     <p class="small text-muted mb-0">Premium Residences</p>
                                     <span class="badge bg-dark mt-2">Upcoming</span>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="config-box p-3 border rounded">
                                     <h4 class="gold-text mb-1">3 BHK</h4>
                                     <p class="small text-muted mb-0">Luxury Residences</p>
@@ -496,12 +496,13 @@
             </div>
 
             <div class="amenities-carousel-wrap">
-                <div id="amenitiesMultiCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Desktop Slider (Shows 3 cards per slide) -->
+                <div id="amenitiesDesktopCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <!-- Slide 1 -->
                         <div class="carousel-item active" data-bs-interval="5000">
                             <div class="row g-4">
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
                                             <img src="images/pool.webp" class="d-block w-100" alt="Swimming Pool">
@@ -511,7 +512,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
                                             <img src="images/gym.webp" class="d-block w-100" alt="Fitness Center (Gym)">
@@ -521,11 +522,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
-                                            <img src="images/gardens.webp" class="d-block w-100"
-                                                alt="Landscaped Gardens">
+                                            <img src="images/gardens.webp" class="d-block w-100" alt="Landscaped Gardens">
                                         </div>
                                         <div class="amenity-banner-bottom amenity-banner-blue">
                                             <h5>Landscaped Gardens</h5>
@@ -537,33 +537,30 @@
                         <!-- Slide 2 -->
                         <div class="carousel-item" data-bs-interval="5000">
                             <div class="row g-4">
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
-                                            <img src="images/kids_play.webp" class="d-block w-100"
-                                                alt="Children's Play Area">
+                                            <img src="images/kids_play.webp" class="d-block w-100" alt="Children's Play Area">
                                         </div>
                                         <div class="amenity-banner-bottom amenity-banner-pink">
                                             <h5>Children's Play Area</h5>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
-                                            <img src="images/yoga_zone.webp" class="d-block w-100"
-                                                alt="Yoga & Meditation Zone">
+                                            <img src="images/yoga_zone.webp" class="d-block w-100" alt="Yoga & Meditation Zone">
                                         </div>
                                         <div class="amenity-banner-bottom amenity-banner-purple">
                                             <h5>Yoga & Meditation Zone</h5>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
-                                            <img src="images/indoor_games.webp" class="d-block w-100"
-                                                alt="Indoor Games Room">
+                                            <img src="images/indoor_games.webp" class="d-block w-100" alt="Indoor Games Room">
                                         </div>
                                         <div class="amenity-banner-bottom amenity-banner-blue">
                                             <h5>Indoor Games Room</h5>
@@ -575,33 +572,30 @@
                         <!-- Slide 3 -->
                         <div class="carousel-item" data-bs-interval="5000">
                             <div class="row g-4">
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
-                                            <img src="images/community_hall.webp" class="d-block w-100"
-                                                alt="Multipurpose Hall">
+                                            <img src="images/community_hall.webp" class="d-block w-100" alt="Multipurpose Hall">
                                         </div>
                                         <div class="amenity-banner-bottom amenity-banner-pink">
                                             <h5>Multipurpose Hall</h5>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
-                                            <img src="images/senior_seating.webp" class="d-block w-100"
-                                                alt="Senior Seating Zone">
+                                            <img src="images/senior_seating.webp" class="d-block w-100" alt="Senior Seating Zone">
                                         </div>
                                         <div class="amenity-banner-bottom amenity-banner-purple">
                                             <h5>Senior Seating Zone</h5>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4">
                                     <div class="amenity-card-new overflow-hidden border">
                                         <div class="amenity-img-wrapper">
-                                            <img src="images/lifestyle_wellness.webp" class="d-block w-100"
-                                                alt="Jogging & Walking Track">
+                                            <img src="images/lifestyle_wellness.webp" class="d-block w-100" alt="Jogging & Walking Track">
                                         </div>
                                         <div class="amenity-banner-bottom amenity-banner-blue">
                                             <h5>Jogging & Walking Track</h5>
@@ -611,13 +605,115 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#amenitiesMultiCarousel"
-                        data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#amenitiesDesktopCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#amenitiesMultiCarousel"
-                        data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#amenitiesDesktopCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Slider (Shows 1 card per slide) -->
+                <div id="amenitiesMobileCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/pool.webp" class="d-block w-100" alt="Swimming Pool">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-pink">
+                                    <h5>Swimming Pool</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/gym.webp" class="d-block w-100" alt="Fitness Center (Gym)">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-purple">
+                                    <h5>Fitness Center (Gym)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/gardens.webp" class="d-block w-100" alt="Landscaped Gardens">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-blue">
+                                    <h5>Landscaped Gardens</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/kids_play.webp" class="d-block w-100" alt="Children's Play Area">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-pink">
+                                    <h5>Children's Play Area</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/yoga_zone.webp" class="d-block w-100" alt="Yoga & Meditation Zone">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-purple">
+                                    <h5>Yoga & Meditation Zone</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/indoor_games.webp" class="d-block w-100" alt="Indoor Games Room">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-blue">
+                                    <h5>Indoor Games Room</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/community_hall.webp" class="d-block w-100" alt="Multipurpose Hall">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-pink">
+                                    <h5>Multipurpose Hall</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/senior_seating.webp" class="d-block w-100" alt="Senior Seating Zone">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-purple">
+                                    <h5>Senior Seating Zone</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="amenity-card-new overflow-hidden border mx-auto" style="max-width: 100%;">
+                                <div class="amenity-img-wrapper">
+                                    <img src="images/lifestyle_wellness.webp" class="d-block w-100" alt="Jogging & Walking Track">
+                                </div>
+                                <div class="amenity-banner-bottom amenity-banner-blue">
+                                    <h5>Jogging & Walking Track</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#amenitiesMobileCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#amenitiesMobileCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
