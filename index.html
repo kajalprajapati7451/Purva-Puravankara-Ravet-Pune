@@ -177,26 +177,50 @@
     <!-- Hero Section (Above the Fold) -->
     <header class="hero-section" id="home">
         <div class="container h-100 position-relative z-index-2">
-            <div class="row h-100 align-items-center justify-content-center text-center">
-                <!-- Center: Content Block -->
-                <div class="col-lg-10 col-md-12 hero-content-block">
+            <div class="row h-100 align-items-center g-5">
+                <!-- Left: Content Block -->gi
+                <div class="col-lg-7 text-lg-start text-center hero-content-block">
                     <span class="pre-title d-block mb-3 text-white"><i class="fa-solid fa-star gold-text me-2"></i> Upcoming Pre-Launch Opportunity</span>
-                    <h1 class="project-title mb-3 display-3 text-white font-cinzel">Purva Puravankara Ravet</h1>
-                    <p class="positioning-statement mb-4 fs-4 text-white">Premium 2 & 3 BHK Residences spread across 20 Acres in Pune's fastest-growing residential corridor.</p>
+                    <h1 class="project-title mb-3 display-4 text-white font-cinzel">Purva Puravankara Ravet</h1>
+                    <p class="positioning-statement mb-4 fs-5 text-white-50">Premium 2 & 3 BHK Residences spread across 20 Acres in Pune's fastest-growing residential corridor.</p>
 
-                    <div class="price-badge mb-4 mx-auto">
+                    <div class="price-badge mb-4 me-lg-auto ms-lg-0 mx-auto">
                         <span class="price-label">Price On Request</span>
                     </div>
 
-                    <div class="hero-highlights-wrap d-flex justify-content-center gap-4 flex-wrap mb-5">
-                        <span class="badge bg-dark-semi py-2 px-3 border border-secondary text-white fs-6"><i class="fa-solid fa-check gold-text me-2"></i> 20-Acre Premium Development</span>
-                        <span class="badge bg-dark-semi py-2 px-3 border border-secondary text-white fs-6"><i class="fa-solid fa-check gold-text me-2"></i> Thoughtful 2 & 3 BHK Sizing</span>
-                        <span class="badge bg-dark-semi py-2 px-3 border border-secondary text-white fs-6"><i class="fa-solid fa-check gold-text me-2"></i> Excellent Expressway Access</span>
+                    <div class="hero-highlights-wrap d-flex justify-content-lg-start justify-content-center gap-3 flex-wrap mb-4">
+                        <span class="badge bg-dark-semi py-2 px-3 border border-secondary text-white"><i class="fa-solid fa-check gold-text me-2"></i> 20-Acre Development</span>
+                        <span class="badge bg-dark-semi py-2 px-3 border border-secondary text-white"><i class="fa-solid fa-check gold-text me-2"></i> 2 & 3 BHK Sizing</span>
+                        <span class="badge bg-dark-semi py-2 px-3 border border-secondary text-white"><i class="fa-solid fa-check gold-text me-2"></i> Expressway Access</span>
                     </div>
+                </div>
 
-                    <div class="hero-buttons d-flex justify-content-center gap-3">
-                        <a href="#contact-section" class="btn btn-primary-gold px-4 py-3">Register Your Interest</a>
-                        <a href="#contact-section" class="btn btn-outline-gold px-4 py-3 text-white border-white">Schedule Site Visit</a>
+                <!-- Right: Lead Form Card -->
+                <div class="col-lg-5 col-md-10 mx-auto">
+                    <div class="hero-form-card p-4 rounded-4 shadow-lg border border-light bg-glass-white">
+                        <h4 class="form-title mb-2 text-dark font-cinzel text-center">Pre-Register Today</h4>
+                        <p class="form-subtitle text-muted small text-center mb-4">Get the latest brochures, floor plans, and pricing directly in your inbox.</p>
+                        
+                        <form id="heroLeadForm" onsubmit="event.preventDefault(); window.location.href='#contact-section';">
+                            <div class="mb-3">
+                                <input type="text" class="form-control rounded-3 py-2 px-3 border-light-custom" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control rounded-3 py-2 px-3 border-light-custom" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control rounded-3 py-2 px-3 border-light-custom" placeholder="Your Phone Number" required>
+                            </div>
+                            <div class="mb-4">
+                                <select class="form-select rounded-3 py-2 px-3 border-light-custom">
+                                    <option value="" disabled selected>Interested Configuration</option>
+                                    <option value="2bhk">2 BHK Apartment</option>
+                                    <option value="3bhk">3 BHK Apartment</option>
+                                    <option value="both">Both Configurations</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary-gold w-100 py-3 rounded-pill fw-bold text-uppercase tracking-wider">Request Sizing & Details</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -1055,44 +1079,33 @@
     </section>
 
     <!-- Dedicated Contact Form Section -->
-    <section class="contact-form-section py-5 bg-dark position-relative overflow-hidden" id="contact-section">
+    <section class="contact-form-section py-5 bg-secondary-custom position-relative" id="contact-section">
         <div class="container py-4 position-relative z-index-2">
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8">
-                    <div class="glass-form-card mx-auto p-5 rounded-4 shadow-lg border border-secondary text-white">
+                <div class="col-lg-8 col-md-10">
+                    <div class="vtp-form-card mx-auto p-4 p-md-5 rounded-4 shadow-lg bg-white border border-light">
                         <div class="text-center mb-4">
-                            <span class="pre-title d-block mb-2 text-white-50"><i class="fa-solid fa-envelope gold-text me-2"></i>Inquiry</span>
-                            <h2 class="form-title text-white mb-2 font-cinzel">Register Your Interest</h2>
-                            <p class="small-text text-white-50 mb-0">Fill out the form below to receive pricing, brochures, and pre-launch updates.</p>
+                            <h2 class="form-title text-dark mb-2 font-cinzel">Contact Us</h2>
+                            <p class="text-muted mb-0 small">Get in touch with our sales team</p>
                         </div>
-                        <form id="enquiryForm" action="#">
-                            <div class="mb-3">
-                                <label for="name" class="form-label text-white-50 small">Full Name</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-dark-semi border-secondary text-white"><i class="fa-solid fa-user small"></i></span>
-                                    <input type="text" class="form-control bg-dark-semi text-white border-secondary" id="name" placeholder="Enter your name" required>
+                        <form id="vtpContactForm" action="#">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-12">
+                                    <input type="text" class="form-control py-3 px-4 rounded-3 border-light-custom" id="vtpName" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="email" class="form-control py-3 px-4 rounded-3 border-light-custom" id="vtpEmail" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="tel" class="form-control py-3 px-4 rounded-3 border-light-custom" id="vtpPhone" placeholder="Your Phone" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control py-3 px-4 rounded-3 border-light-custom" id="vtpMessage" rows="4" placeholder="Your Message"></textarea>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label text-white-50 small">Phone Number</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-dark-semi border-secondary text-white"><i class="fa-solid fa-phone small"></i></span>
-                                    <input type="tel" class="form-control bg-dark-semi text-white border-secondary" id="phone" placeholder="Enter your phone number" required>
-                                </div>
+                            <div class="text-center mt-5">
+                                <button type="submit" class="btn btn-vtp-submit py-3 px-5 rounded-pill fw-bold text-white shadow"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</button>
                             </div>
-                            <div class="mb-4">
-                                <label for="preference" class="form-label text-white-50 small">Your Preference</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-dark-semi border-secondary text-white"><i class="fa-solid fa-circle-question small"></i></span>
-                                    <select class="form-select bg-dark-semi text-white border-secondary" id="preference" required>
-                                        <option value="" disabled selected>Select option</option>
-                                        <option value="Site Visit">Site Visit</option>
-                                        <option value="Cost Sheet">Cost Sheet</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary-gold w-100 py-3 fw-bold fs-6">Submit Details</button>
-                            <p class="privacy-text text-center text-white-50 mt-3 mb-0 small"><i class="fa-solid fa-lock me-1"></i> Your information is safe & protected with us.</p>
                         </form>
                     </div>
                 </div>

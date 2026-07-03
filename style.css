@@ -832,3 +832,83 @@ footer.footer p {
 .advantage-card:hover .advantage-icon i {
     color: var(--bg-secondary) !important;
 }
+
+/* VTP Contact Form Card */
+.vtp-form-card {
+    position: relative;
+    border-radius: 24px;
+    border: none !important;
+    overflow: hidden;
+}
+
+/* Gradient Top Border */
+.vtp-form-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #4285F4 0%, #9b51e0 25%, #E91E63 50%, #FF9800 75%, #4CAF50 100%);
+    z-index: 5;
+}
+
+/* Custom input border styling */
+.border-light-custom {
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    background-color: var(--bg-white) !important;
+    color: var(--bg-secondary) !important;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.border-light-custom:focus {
+    border-color: #4285F4 !important;
+    box-shadow: 0 0 10px rgba(66, 133, 244, 0.15) !important;
+    outline: none;
+}
+
+/* VTP Submit Button */
+.btn-vtp-submit {
+    background: linear-gradient(135deg, #0288d1 0%, #26a69a 100%) !important;
+    border: none !important;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.btn-vtp-submit:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(38, 166, 154, 0.4) !important;
+}
+
+/* Hero Glass Form Card */
+.hero-form-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 20px;
+}
+
+/* Responsive Padding Sizing */
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 120px 0 60px 0 !important;
+        height: auto !important;
+        min-height: 100vh;
+    }
+    
+    .hero-content-block {
+        text-align: center !important;
+        margin-bottom: 40px;
+    }
+    
+    .hero-highlights-wrap {
+        justify-content: center !important;
+    }
+    
+    .advantage-card {
+        margin-bottom: 15px;
+    }
+}
